@@ -1,0 +1,17 @@
+{
+  "Medicines": {
+    "Paracetamol": "### Paracetamol\n\n- Used for **fever** and mild pain.\n- Safe for most people.\n\n[More info](https://en.wikipedia.org/wiki/Paracetamol)",
+    "Ibuprofen": "### Ibuprofen\n\n- Reduces **inflammation**, pain, and fever\n- Should be taken **after food**\n\n- Not suitable for people with ulcers",
+    "Aspirin": "### Aspirin\n\n- **Pain relief** and **blood thinner**\n- Avoid if you have bleeding risks\n\nLearn more on [Mayo Clinic](https://www.mayoclinic.org/drugs-supplements/aspirin-oral-route/description/drg-20069781)"
+  },
+  "Stress": {
+    "Work Stress": "Stress caused by job-related pressure or long hours.",
+    "Academic Stress": "Stress experienced by students due to studies.",
+    "Financial Stress": "Stress due to money, debt, or expenses."
+  },
+  "Depression": {
+    "Mild": "Mild depression may cause sadness but daily activities continue.",
+    "Moderate": "Moderate depression can affect social and work life.",
+    "Severe": "Severe depression needs professional help and medication."
+  }
+}
