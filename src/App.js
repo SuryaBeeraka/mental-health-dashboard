@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Routes, Route, useNavigate, useParams } from 'react-router-dom';
 import './styles.css';
 import ReactMarkdown from 'react-markdown';
+import UploadPage from './pages/UploadPage';
+
 function App() {
   const [data, setData] = useState(null);
 
@@ -20,6 +22,7 @@ function App() {
         <Route path="/" element={<CategoryList data={data} />} />
         <Route path="/category/:category" element={<CategoryPage data={data} />} />
         <Route path="/category/:category/:subtopic" element={<CategoryPage data={data} />} />
+        <Route path="/upload" element={<UploadPage />} />
       </Routes>
     </div>
   );
@@ -40,6 +43,9 @@ function CategoryList({ data }) {
           {category}
         </div>
       ))}
+      <div className="category-card upload-link" onClick={() => navigate('/upload')}>
+        Upload Patient Note
+      </div>
     </div>
   );
 }
@@ -56,18 +62,15 @@ function CategoryPage({ data }) {
     return <p>Invalid category. <button onClick={() => navigate('/')}>Go Home</button></p>;
   }
 
-  // Filter subtopics based on search input
   const filteredSubtopics = subtopicNames.filter((name) =>
     name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
     <div className="dashboard-layout">
-      {/* Sidebar */}
       <div className="sidebar">
         <h2>{category}</h2>
 
-        {/* Search Bar */}
         <input
           type="text"
           placeholder="Search..."
@@ -93,11 +96,9 @@ function CategoryPage({ data }) {
         <button onClick={() => navigate('/')}>← Back to Categories</button>
       </div>
 
-      {/* Info Panel */}
       <div className="info-panel">
         {subtopic ? (
           <>
-            
             <ReactMarkdown>{subtopics[subtopic]}</ReactMarkdown>
           </>
         ) : (

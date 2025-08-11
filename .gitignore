@@ -21,3 +21,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# env & secrets
+backend/.env
+.env
+
+# Python venv
+backend/venv/
+
+# Node
+node_modules/

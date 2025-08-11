@@ -127,3 +127,53 @@ h1 {
   border: 1px solid #ccc;
   font-size: 14px;
 }
+
+.upload-page {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.upload-page input,
+.upload-page button {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.extracted-info {
+  margin-top: 2rem;
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.upload-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.upload-page input {
+  margin-bottom: 10px;
+}
+
+.upload-page button {
+  padding: 10px 20px;
+  background-color: #4cafef;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.upload-page button:disabled {
+  background-color: #aaa;
+}
+
+.extracted-info {
+  margin-top: 20px;
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+}
